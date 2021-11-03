@@ -1,0 +1,141 @@
+@import 'reset';
+@import 'variables';
+
+
+body {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+
+    background-color: gray;
+}
+h1, h2 , h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    background-image: url('../images/bg-mobile.svg');
+    background-size: cover;
+    background-position: left;
+    height: 100%;
+    background-color: $violet;
+
+    width: 800px;
+    max-width: 100%;
+    margin: 100px auto 100px;
+}
+
+.container {
+    width: 590px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    padding: 0 1.5em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding-top: 6em;
+    padding-bottom: 16em;
+
+    > img {
+     width: 200px;   
+    }
+}
+
+.content {
+    color: #fff;
+    text-align: center;
+    h1 {
+        font-size: 2.3rem;
+        padding-top: 2em;
+        padding-bottom: 1em;
+    }
+    p {
+        font-size: 1.6rem;
+        line-height: 1.7;
+    }
+    .mockup {
+        width: 100%;
+    }
+    .btn {
+        background-color: #fff;
+        font-size: 1.7rem;
+        padding: .7em 2em;
+        width: 60%;
+        border-radius: 40px;
+        color: $violet;
+        font-weight: 400;
+        margin-top: 1.2em;
+        cursor: pointer;
+        border: none;
+
+        box-shadow: 6px 5px 9px rgba(0,0,0,0.3);
+
+        &:hover {
+            background-color: $soft-magenta;
+            color: #fff;
+            transition: .3s ease-in-out;
+        }
+    };
+}
+
+.social__icons {
+    text-align: center;
+    padding: 8em 0 6em 0;
+    .fab {
+        font-size: 3rem;
+        color: #fff;
+        cursor: pointer;
+        &:hover {
+            color: $soft-magenta;
+            transition: .3s ease-in-out;
+        }
+    }
+    > * {
+        padding: 0px .25em;
+    }
+
+}
+
+@media (min-width: 820px){
+    main {
+        background-image: url('../images/bg-desktop.svg');
+        width: 1440px;
+        max-width: 100%
+    }
+    .container {
+        width: 1440px;
+        padding: 5em
+    }
+    .content {
+        display: flex;
+        flex-direction: row;
+        text-align: left;;
+
+         h1 {
+            width: 19ch;
+            padding-top: 1em;
+         }
+         p {
+             font-size: 1.4rem;
+         }
+        .mockup {
+            flex: 1; 
+           
+            max-width: 90%;
+        }
+        .content__text {
+            flex: 1;
+            
+            max-width: 90%;
+        }
+        .btn {
+            width: 300px;
+        }
+    }
+    .social__icons {
+        text-align: right;;
+    }
+}
