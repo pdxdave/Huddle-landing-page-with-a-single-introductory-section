@@ -116,23 +116,23 @@ header {
 
          h1 {
             width: 19ch;
-            padding-top: 1em;
+            padding-top: 1.2em;
+            font-size: 2.5rem;
+            padding-bottom: .5em;
          }
          p {
-             font-size: 1.4rem;
+             font-size: 1.2rem;
          }
         .mockup {
             flex: 1; 
-           
-            max-width: 90%;
+            padding-right: 6em;
+    
         }
         .content__text {
             flex: 1;
-            
-            max-width: 90%;
         }
         .btn {
-            width: 300px;
+            width: 240px;
         }
     }
     .social__icons {

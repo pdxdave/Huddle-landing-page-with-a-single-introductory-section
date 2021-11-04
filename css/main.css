@@ -137,25 +137,26 @@ header > img {
   }
   .content h1 {
     width: 19ch;
-    padding-top: 1em;
+    padding-top: 1.2em;
+    font-size: 2.5rem;
+    padding-bottom: .5em;
   }
   .content p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .content .mockup {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    max-width: 90%;
+    padding-right: 6em;
   }
   .content .content__text {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    max-width: 90%;
   }
   .content .btn {
-    width: 300px;
+    width: 240px;
   }
   .social__icons {
     text-align: right;
